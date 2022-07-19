@@ -1,0 +1,173 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#welcome-section{
+   background-image: url('../ilia-bronskiy-6imcVM1IoIU-unsplash.jpg');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+header h1{
+    font-size: 50px;
+}
+header p{
+    font-size: 30px;
+}
+
+#projects{
+    color: white ;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+nav{
+   background-image: url('../luka-senica-FxmV3YLx_co-unsplash.jpg');
+   background-position: center;
+    background-size: cover;
+    opacity: 0.7;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color:rgb(0, 0, 0);
+    z-index: 1;
+    
+}
+nav a{
+    font-size: 30px;
+    margin: 0 5% 0 5%;
+}
+nav a:hover{
+    color: rgb(255, 0, 0);
+}
+main section{
+    margin: 20px 10% 20px 10%;
+    display: grid;
+    grid-template: repeat(2,1fr)/repeat(3,1fr);
+    grid-column-gap: 10px;
+    justify-items: center;
+}
+.project-tile{
+    margin-bottom: 90px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.project-tile img{
+    width: 250px;
+}
+main{
+    background-image: url('../wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-top:120px;
+    display: flex;
+    flex-direction: column;
+}
+main button{
+    background-color: turquoise;
+    text-align: center;
+    border-radius: 5px;
+    border-color: #040a0e;
+    cursor: pointer;
+    box-shadow: none;
+    width: auto;
+    align-self: center;
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 20px;
+}
+main a,main a:hover,main a:active,main a:focus,main a:visited{
+    text-decoration: none;
+    color: #ffffff;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+main section div a:hover{
+    border-radius: 10px;
+    box-shadow: -5px 5px 20px,5px -5px 20px,5px 5px 20px,-5px -5px 20px;
+}
+a, a:hover, a:active, a:focus, a:visited{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+main section div a img{
+    border: solid;
+    border-color: #03A9F4;
+    border-width: 2px;
+    border-radius: 10px;
+    height: 120px;
+    width: auto;
+    overflow: hidden;
+}
+footer{
+    background-image: url('../kevin-staub-0m_TcZKKgz4-unsplash.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+footer div a{
+    background-color: black;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: pre-line;
+    overflow: hidden;
+}
+footer div a:hover{
+    border-radius: 50%;
+    box-shadow: -5px 5px 10px,5px -5px 10px,5px 5px 10px,-5px -5px 10px;
+}
+footer div a img{
+    border-radius: 50%;
+}
+footer div p{
+    text-align: center;
+}
+#footer{
+    font-size: 20px;
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+    font-style: oblique;
+    font-variant: inherit;
+}
+footer p{
+    margin-top: 10%;
+}
+@media (max-width: 800px){
+    nav{
+        background-color: #C5CAE9;
+        height: 100px;
+        width: 100%;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        z-index: 1;
+    }
+    main section{
+        margin: 20px 10% 20px 10%;
+        display: grid;
+        grid-template: repeat(6,1fr)/1fr;
+        justify-items: center;
+    }
+    footer{
+        background-color: #A7FFEB;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
